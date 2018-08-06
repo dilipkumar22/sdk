@@ -1,4 +1,4 @@
-﻿
+
 <html>
     <head>
         <style>
@@ -101,23 +101,7 @@
                };
              </script>  
            
-           <script type="text/javascript">
-                var d = new Date();
-                var time = d.getHours();
-
-                if (time < 12) 
-                {
-                    document.write("<b>Good morning!</b>");
-                }
-                if (time > 12) 
-                {
-                    document.write("<b>Good afternoon!</b>");
-                }
-                if (time == 12) 
-                {
-                    document.write("<b>Go eat lunch!</b>");
-                }
-           </script>
+           
            
             <video autoplay muted loop id="myVideo">
             <source src="Website.mp4" type="video/mp4">
@@ -152,11 +136,11 @@
               <hr>
               <h1 style="color:white; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
               <blockquote style=" font-size: 20px; color:white; ">-an official site</blockquote>
-              <button class="t2"><span style="cursor:pointer;" onclick="alert('Omg! I got 45+1 likes')"> Like</span> </button>
+              <button class="t2"><span style="cursor:pointer;" onclick="alert('Liked')"> Liked!!</span> </button>
               <hr>
           </div>
             
-           <audio controls >
+           <audio controls >o
                <source src="Charlie.mp3" type="audio/mpeg">
            </audio>
             
@@ -167,9 +151,11 @@
           <form style="text-align:center;" name="login">
               <input list="name" placeholder="yourname" name="userid" type="text">
               <datalist id="name">
+              <option value="Alex">
               <option value="Danujan">
               <option value="Tanvir">
-              <option value="Ranjith">
+              <option value="Illakia">
+              
               </datalist>
               <input type="password" placeholder="password" name="pswrd"><br><br>
               <input style="cursor:pointer" type="button" onclick="check(this.form)" value="login"/>
@@ -184,6 +170,8 @@
                     window.open('tanvir.html')
                 }else if((form.userid.value =="illakia") && (form.pswrd.value=="illakiasis")){
                     window.open('illakia.html')
+                }else if((form.userid.value =="Alex") && (form.pswrd.value=="motta")){
+                    window.open('abh.html')
                 }
                   else{
                   alert("The password you have entered is incorrect")
