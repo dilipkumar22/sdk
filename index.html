@@ -1,0 +1,208 @@
+﻿
+<html>
+    <head>
+        <style>
+        .t1{
+               font-size:200%; 
+               position: absolute;
+               top:0;
+               left:0;
+            }
+            
+    div.name {
+              text-align:center; 
+              margin:5px;
+              padding:5px;
+             }
+            
+   .t2:hover{
+                background-color:darkgrey;
+                border-bottom-color: aliceblue;
+            }
+            
+         ul{
+             list-style-type: none;
+             margin:0;
+             padding:0;
+             overflow:auto;
+             font-size: 38px;
+            }
+            
+          li{
+                float: left;
+            }
+            
+       li a{
+                display:block;
+                color: black;
+                padding: 14px,16px;
+                text-decoration: none;
+                
+            }
+            
+            li a:hover{
+                background-color: gray;
+            }
+           
+            
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                left:0;
+                min-width: 100%; 
+                min-height: 100%;
+            }
+            
+            .backgroundwrap{
+                position:absolute;
+                background: rgba(0, 0, 0, 0.5);
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                right: 0;
+                top:70;
+            }
+            .facebook{
+                position: absolute;
+                top:20;
+                right:20;
+            }
+            .instagram{
+                position: absolute;
+                top:20;
+                right: 70;
+            }
+            .whatsapp{
+                position: absolute;
+                top:20;
+                right: 120;
+            }
+            .bottom{
+                position: absolute;
+                bottom: 0;
+                
+            }
+            
+        </style>
+       <body>
+           <script language="JavaScript">
+               document.addEventListener("contextmenu", function(e){ e.preventDefault(); }, false); 
+           </script>
+             <script>
+                    document.onkeydown = function(e) 
+               {
+                      if (e.ctrlKey && (e.keyCode === 67 ||e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+                      alert('Smart!!');
+                      return false;
+                      } else {
+                      return true;
+                      }
+               };
+             </script>  
+           
+           <script type="text/javascript">
+                var d = new Date();
+                var time = d.getHours();
+
+                if (time < 12) 
+                {
+                    document.write("<b>Good morning!</b>");
+                }
+                if (time > 12) 
+                {
+                    document.write("<b>Good afternoon!</b>");
+                }
+                if (time == 12) 
+                {
+                    document.write("<b>Go eat lunch!</b>");
+                }
+           </script>
+           
+            <video autoplay muted loop id="myVideo">
+            <source src="Website.mp4" type="video/mp4">
+            </video>
+            
+                <h1 class="t1" style="color: white;">Live a zero waste life.</h1>
+           
+           <div class="facebook">
+                 <a href="https://www.facebook.com/profile.php?id=100003279987296">
+                 <img  src="facebook-logo.png" width="40px" height="40px" >
+                 </a>
+           </div>
+           
+           <div class="instagram">
+                 <a href="https://www.instagram.com/_mr_blacksmith/">
+                 <img  src="instagram-logo.png" width="40px" height="42px" >
+                 </a>
+           </div>
+           
+            <div class="whatsapp">
+                 <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
+                 <img  src="whatsapp.png" width="40px" height="42px" >
+                 </a>
+           </div>
+          
+        <div class="backgroundwrap">
+            
+            
+         
+           <div class="name">
+                 
+              <hr>
+              <h1 style="color:white; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
+              <blockquote style=" font-size: 20px; color:white; ">-an official site</blockquote>
+              <button class="t2"><span style="cursor:pointer;" onclick="alert('Omg! I got 45+1 likes')"> Like</span> </button>
+              <hr>
+          </div>
+            
+           <audio controls >
+               <source src="Charlie.mp3" type="audio/mpeg">
+           </audio>
+            
+          
+            
+           <h2 style="text-align:center; color:white; " ><blockquote>If we know each other then<br>go for this</blockquote></h2>
+          
+          <form style="text-align:center;" name="login">
+              <input list="name" placeholder="yourname" name="userid" type="text">
+              <datalist id="name">
+              <option value="Danujan">
+              <option value="Tanvir">
+              <option value="Ranjith">
+              </datalist>
+              <input type="password" placeholder="password" name="pswrd"><br><br>
+              <input style="cursor:pointer" type="button" onclick="check(this.form)" value="login"/>
+              <h3 style="color: aquamarine;">[Hint: In the field of password, type the word that I used to call you]</h3>
+           </form>
+
+            <script language="javascript">
+              function check(form){
+                if((form.userid.value == "Danujan") && (form.pswrd.value=="pooj")){
+                  window.open('danujan.html')
+                }else if((form.userid.value =="Tanvir") && (form.pswrd.value=="veer")){
+                    window.open('tanvir.html')
+                }else if((form.userid.value =="illakia") && (form.pswrd.value=="illakiasis")){
+                    window.open('illakia.html')
+                }
+                  else{
+                  alert("The password you have entered is incorrect")
+                }
+              }
+            </script>
+            
+                <div class="bottom" style= "color:black; background-color:whitesmoke;font-size: 25px">
+              <h1 style="text-align:center;">About me</h1>
+            
+             <blockquote>I was so mean in my childhood and my interests have never been static. Since I love to aquire each and every oppurtunity in this world. Website development came into my radar just before a week. I tried something and I am on it.  
+                    Cheers!
+            </blockquote>
+                
+            </div>
+          
+               
+           </div>
+           
+        </body>    
+    </head>
+</html>
