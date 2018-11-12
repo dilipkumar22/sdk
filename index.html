@@ -92,6 +92,50 @@ background: url(f2.png);
 transform: rotateY(180deg);
 }
 
+.container3{
+       width: 250px;
+       height:360px;
+       background: url(f1.png);
+       position:relative;
+       right: -85%;
+       top: -27%;
+       transform: translate(-50%,-50%);
+       perspective:1000px;
+       bottom: 50%;
+       }
+ .cover3{
+   width: 250px; 
+   height: 100%;
+   position:absolute;
+   left: 10px;
+   background-color: #345b8c;
+   transform: rotateY(0deg);
+   transform-style: preserve-3d;
+   transform-origin: left;
+   transition: all .5s ease-in;
+  }
+
+.container3:hover .cover3{
+ transform: rotateY(-180deg);
+}
+
+figure3{
+margin: 0;
+display: block;
+position: absolute;
+width:100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+figure3.front3{
+background: url(r1.jpg);
+}
+
+figure3.back3{
+background: url(f2.png);
+transform: rotateY(180deg);
+}
 
 		
         .t1{
@@ -326,7 +370,12 @@ transform: rotateY(180deg);
              <figure2 class="back2"></figure2>
          </div>  
 	 </div>	
-    		
+         <div class="container3">
+             <div class="cover3">
+             <figure3 class="front3"></figure3>
+             <figure3 class="back3"></figure3>
+         </div>  
+	 </div>        
                 <div class="bottom" style= "color:black; background-color:whitesmoke;font-size: 25px">
               <h1 style="text-align:center;">About me</h1>
             
