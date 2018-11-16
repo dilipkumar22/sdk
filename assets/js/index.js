@@ -1,6 +1,6 @@
 document.onkeydown = function (e) {
     if ((e.ctrlKey && (e.keyCode === 67 || e.keyCode === 70 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 73)) || (e.keyCode === 123 || e.keyCode === 117)) {
-        alert('Smart!!');
+        swal('Smart!!');
         return false;
     } else {
         return true;
@@ -42,6 +42,10 @@ function check(form) {
         window.open('./pages/mods.html')
     }
     else {
-        alert("I don't think that is the word I call you")
+        loginFailed();
     }
+} 
+
+function loginFailed(){
+    swal("LogIn error", "I don't think that is the word I call you", "error");
 }
