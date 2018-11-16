@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>_Mr_BlackSmith</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <title>_Mr_Blacksmith</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/index.css"> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <script type="text/javascript" src="./assets/js/index.js"></script>
+
 </head>
-<body>
-    <video autoplay muted loop id="myVideo">
-        <source src="Website.mp4" type="video/mp4">
-    </video>
 
-    <h1 class="t1" style="color: white;">Live a zero waste life.</h1>
+<body id="body">
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="navbar-brand mr-auto">
+            Live a zero waste life.
+        </div>
+        <div class="mr-sm-2">
+            <a href="https://www.facebook.com/profile.php?id=100003279987296">
+                <span style="font-size: 3em; color: white;">
+                    <i class="fab fa-facebook-square"></i>
+                </span>
+            </a>
+        </div>
+        <div class="mr-sm-2">
+            <a href="https://www.instagram.com/_mr_blacksmith/">
+                <span style="font-size: 3em; color: white;">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </a>
+        </div>
 
-    <div class="facebook">
-        <a href="https://www.facebook.com/profile.php?id=100003279987296">
-            <img src="facebook-logo.png" width="40px" height="40px">
-        </a>
-    </div>
+        <div class="mr-sm-2">
+            <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
+                <span style="font-size: 3em; color: white;">
+                    <i class="fab fa-whatsapp"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+    <!--video autoplay muted loop id="myVideo">
+        <source src="./assets/videos/Website.mp4" type="video/mp4">
+    </video> 
+    -->
 
-    <div class="instagram">
-        <a href="https://www.instagram.com/_mr_blacksmith/">
-            <img src="instagram-logo.png" width="40px" height="42px">
-        </a>
-    </div>
-
-    <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
-            <img src="whatsapp.png" width="40px" height="42px">
-        </a>
-    </div>
-
-    <div class="backgroundwrap">
+    <div class="container">
 
 
 
         <div class="name">
 
             <hr>
-            <h1 style="color:white; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
-            <blockquote style=" font-size: 20px; color:white; ">-an official site</blockquote>
+            <h1 class="text-center" style="color:black; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
+            <blockquote class="text-center" style=" font-size: 20px; color:black; ">-an official site</blockquote>
             <button class="t2"><span style="cursor:pointer;" onclick="alert('Thanks for your support sweet')"> Like</span>
             </button>
             <hr>
         </div>
 
-        <audio controls autoplay>
-            <source src="Charlie.mp3" type="audio/mpeg">
+        <audio nocontrols autoplay>
+            <source src="./assets/music/Charlie.mp3" type="audio/mpeg">
         </audio>
 
 
@@ -57,70 +73,64 @@
             <blockquote>If we know each other then<br>go for this</blockquote>
         </h2>
 
-        <form style="text-align:center;" name="login">
-            <input list="name" placeholder="yourname" name="userid" type="text">
-            <datalist id="name">
-                <option value="Aarthi akka">
-                <option value="Alex">
-                <option value="Aravind VC">
-                <option value="Ajith TV">
-                <option value="Danujan">
-                <option value="Dinesh">
-                <option value="Daniel">
-                <option value="Henry">
-                <option value="Peer">
-                <option value="Thangabalu">
-                <option value="Saran">
-                <option value="illakia">
-                <option value="JohnChris">
-                <option value="Jijithra">
-                <option value="Tanvir">
-                <option value="Gowla">
-                <option value="Gautham anna">
-                <option value="Gokul">
-                <option value="Poovarasan">
-                <option value="Jeyasurya">
-                <option value="Manikandan">
-                <option value="Dolath">
-                <option value="Sivasubramani">
-                <option value="Sivasakthi">
-                <option value="Ranjith">
-                <option value="Jesaswini">
-                <option value="Teju">
 
-            </datalist>
-            <input type="password" placeholder="password" name="pswrd"><br><br>
-            <input style="cursor:pointer" type="button" onclick="check(this.form)" value="login" />
+        <form class="form-inline" name="login" method="POST">
+            <div class="form-group mb-2">
+                <label for="input-name" class="sr-only">Email</label>
+                <input list="name" name="userid" type="text" class="form-control" id="input-name" placeholder="Your Name">
+                <datalist id="name">
+                    <option value="Aarthi akka">
+                    <option value="Alex">
+                    <option value="Aravind VC">
+                    <option value="Ajith TV">
+                    <option value="Danujan">
+                    <option value="Dinesh">
+                    <option value="Daniel">
+                    <option value="Jeny">
+                    <option value="Henry">
+                    <option value="Peer">
+                    <option value="Thangabalu">
+                    <option value="Saran">
+                    <option value="illakia">
+                    <option value="JohnChris">
+                    <option value="Jijithra">
+                    <option value="Tanvir">
+                    <option value="Gowla">
+                    <option value="Gautham anna">
+                    <option value="Gokul">
+                    <option value="Poovarasan">
+                    <option value="Jeyasurya">
+                    <option value="Manikandan">
+                    <option value="Dolath">
+                    <option value="Sivasubramani">
+                    <option value="Sivasakthi">
+                    <option value="Ranjith">
+                    <option value="Jesaswini">
+                    <option value="Teju">
+
+                </datalist>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" name="pswrd" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <input type="button" class="btn btn-primary mb-2" onclick="check(this.form)" value="Confirm identity" />
             <h3 style="color: aquamarine;">[Hint: In the field of password, type the word that I used to call you]</h3>
         </form>
 
-        
-        <div class="container">
-            <div class="cover">
-                <figure class="front"></figure>
-                <figure class="back"></figure>
-            </div>
-        </div>
-        ]
-        <div class="bottom" style="color:black; background-color:whitesmoke;font-size: 25px">
+        <br><br><br>
+        <div class="text-left" style="color:black; background-color:whitesmoke;font-size: 25px">
             <h1 style="text-align:center;">About me</h1>
-
             <blockquote>
                 Once a wise man said "Make the world to remeber you for what you are and not the money you make". That
                 made me to acquire as much as I can and thus
-                my interests never remained static and I strongly believe that every breath of mine should count for
+                my interests never remained static and I strongly believed that every breath of mine should count for
                 something. Website development came into my radar when
                 I was forced to attend the PRP classes. Since everything happens for a reason, I sticked to it and made
                 a count for myself. So I made this for the people I love.
                 However some walked away and thats their choice. Still no worries.....Cheers!
             </blockquote>
-
         </div>
-
-
     </div>
-
 </body>
-</head>
-
 </html>
