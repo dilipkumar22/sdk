@@ -1,296 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <style>
-       .container{
-       width: 250px;
-       height:370px;
-       background: url(p1.jpg);
-       position:relative;
-       left: 50%;
-       top: 29%;
-       transform: translate(-50%,-50%);
-       perspective:1000px;
-       bottom: 50%;
-       }
- .cover{
-   width: 250px; 
-   height: 100%;
-   position:absolute;
-   left: 10px;
-   background-color: #345b8c;
-   transform: rotateY(0deg);
-   transform-style: preserve-3d;
-   transform-origin: left;
-   transition: all .5s ease-in;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>_Mr_Blacksmith</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/index.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
 
-.container:hover .cover{
- transform: rotateY(-180deg);
-}
+<body>
 
-figure{
-margin: 0;
-display: block;
-position: absolute;
-width:100%;
-height: 100%;
-backface-visibility: hidden;
-}
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="navbar-brand mr-auto">
+            Live a zero waste life.
+        </div>
+        <div class="mr-sm-2">
+            <a href="https://www.facebook.com/profile.php?id=100003279987296">
+                <span style="font-size: 2em; color: white;">
+                    <i class="fab fa-facebook-square"></i>
+                </span>
+            </a>
+        </div>
+        <div class="mr-sm-2">
+            <a href="https://www.instagram.com/_mr_blacksmith/">
+                <span style="font-size: 2em; color: white;">
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </a>
+        </div>
 
-figure.front{
-background: url(p3.jpg);
-}
+        <div class="mr-sm-2">
+            <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
+                <span style="font-size: 2em; color: white;">
+                    <i class="fab fa-whatsapp"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
 
-figure.back{
-background: url(p2.jpg);
-transform: rotateY(180deg);
-}
-		
-		
-        .t1{
-               font-size:200%; 
-               position: absolute;
-               top:0;
-               left:0;
-            }
-            
-    div.name {
-              text-align:center; 
-              margin:5px;
-              padding:5px;
-             }
-            
-   .t2:hover{
-                background-color:darkgrey;
-                border-bottom-color: aliceblue;
-            }
-            
-         ul{
-             list-style-type: none;
-             margin:0;
-             padding:0;
-             overflow:auto;
-             font-size: 38px;
-            }
-            
-          li{
-                float: left;
-            }
-            
-       li a{
-                display:block;
-                color: black;
-                padding: 14px,16px;
-                text-decoration: none;
-                
-            }
-            
-            li a:hover{
-                background-color: gray;
-            }
-           
-            
-            #myVideo {
-                position: fixed;
-                right: 0;
-                bottom: 0;
-                left:0;
-                min-width: 100%; 
-                min-height: 100%;
-            }
-            
-            .backgroundwrap{
-                position:absolute;
-                background: rgba(0, 0, 0, 0.5);
-                background-color: transparent;
-                width: 100%;
-                height: 100%;
-                right: 0;
-                top:70;
-            }
-            .facebook{
-                position: absolute;
-                top:20;
-                right:20;
-            }
-            .instagram{
-                position: absolute;
-                top:20;
-                right: 70;
-            }
-            .whatsapp{
-                position: absolute;
-                top:20;
-                right: 120;
-            }
-            .bottom{
-                position: absolute;
-                bottom: 0;
-                
-            }
-            
-        </style>
-       <body>
-           
-             <script>
-                    document.onkeydown = function(e) 
-               {
-                      if ((e.ctrlKey && (e.keyCode === 67 ||e.keyCode === 70 ||e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 73 )) || (e.keyCode === 123 || e.keyCode === 117)) {
-                      alert('Smart!!');
-                      return false;
-                      } else {
-                      return true;
-                      }
-               };
-             </script>  
-           
-           
-           
-            <video autoplay muted loop id="myVideo">
-            <source src="Website.mp4" type="video/mp4">
-            </video>
-            
-                <h1 class="t1" style="color: white;">Live a zero waste life.</h1>
-           
-           <div class="facebook">
-                 <a href="https://www.facebook.com/profile.php?id=100003279987296">
-                 <img  src="facebook-logo.png" width="40px" height="40px" >
-                 </a>
-           </div>
-           
-           <div class="instagram">
-                 <a href="https://www.instagram.com/_mr_blacksmith/">
-                 <img  src="instagram-logo.png" width="40px" height="42px" >
-                 </a>
-           </div>
-           
-            <div class="whatsapp">
-                 <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
-                 <img  src="whatsapp.png" width="40px" height="42px" >
-                 </a>
-           </div>
-          
-        <div class="backgroundwrap">
-            
-            
-         
-           <div class="name">
-                 
-              <hr>
-              <h1 style="color:white; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
-              <blockquote style=" font-size: 20px; color:white; ">-an official site</blockquote>
-              <button class="t2"><span style="cursor:pointer;" onclick="alert('Thanks for your support sweet')"> Like</span> </button>
-              <hr>
-          </div>
-            
-           <audio controls autoplay >
-               <source src="Charlie.mp3" type="audio/mpeg">
-           </audio>
-            
-          
-            
-           <h2 style="text-align:center; color:white; " ><blockquote>If we know each other then<br>go for this</blockquote></h2>
-          
-          <form style="text-align:center;" name="login">
-              <input list="name" placeholder="yourname" name="userid" type="text">
-              <datalist id="name">
-              <option value="Aarthi akka"> 
-              <option value="Alex">
-              <option value="Aravind VC">
-              <option value="Ajith TV">
-              <option value="Danujan">
-              <option value="Dinesh">
-              <option value="Daniel">                 
-              <option value="Henry">
-              <option value="Peer"> 
-              <option value="Thangabalu"> 
-              <option value="Saran">     
-              <option value="illakia">
-              <option value="JohnChris">
-              <option value="Jijithra">    
-              <option value="Tanvir">
-              <option value="Gowla">
-              <option value="Gautham anna"> 
-              <option value="Gokul">
-              <option value="Poovarasan">
-              <option value="Jeyasurya">
-              <option value="Manikandan">   
-              <option value="Dolath">
-              <option value="Sivasubramani">    
-              <option value="Sivasakthi">    
-              <option value="Ranjith"> 
-              <option value="Jesaswini">     
-              <option value="Teju">
-                    
-              </datalist>
-              <input type="password" placeholder="password" name="pswrd"><br><br>
-              <input style="cursor:pointer" type="button" onclick="check(this.form)" value="login"/>
-              <h3 style="color: aquamarine;">[Hint: In the field of password, type the word that I used to call you]</h3>
-           </form>
 
-            <script language="javascript">
-              function check(form){
-                if((form.userid.value == "Danujan") && (form.pswrd.value=="pooj")){
-                  window.open('danujan.html')
-                }else if((form.userid.value =="Tanvir") && (form.pswrd.value=="veer")){
-                    window.open('tanvir.html')
-                }else if((form.userid.value =="illakia") && (form.pswrd.value=="sis")){
-                    window.open('illakia.html')
-                }else if((form.userid.value =="Alex") && (form.pswrd.value=="motta")){
-                    window.open('alex.html')
-                }else if((form.userid.value =="Ajith TV") && (form.pswrd.value=="rep")){
-                    window.open('rep.html')
-                }else if((form.userid.value =="Aravind VC") && (form.pswrd.value=="vc")){
-                    window.open('vc.html')
-                }else if((form.userid.value =="Gowla") && (form.pswrd.value=="gowli")){
-                    window.open('gowli.htm')
-                }else if((form.userid.value =="Gokul") && (form.pswrd.value=="gokima")){
-                    window.open('gokul.html')
-                }else if(((form.userid.value =="Jeny")||(form.userid.value =="jeny")) && (form.pswrd.value=="mods")){
-                    window.open('jeny.html')
-                }else if((form.userid.value =="Jijithra") && (form.pswrd.value=="sis")){
-                    window.open('jijithra.html')
-                }else if((form.userid.value =="Dolath") && (form.pswrd.value=="koks")){
-                    window.open('dolath.html')    
-                }else if((form.userid.value =="Daniel") && (form.pswrd.value=="kothu")){
-                    window.open('daniel.html')    
-                }else if((form.userid.value =="Dinesh") && (form.pswrd.value=="balloon")){
-                    window.open('dinesh.html')    
-                }else if((form.userid.value =="Poovarasan") && (form.pswrd.value=="ponukala")){
-                    window.open('poovarasan.html')    
-                }else if((form.userid.value =="Sivasubramani") && (form.pswrd.value=="dudeuh")){
-                    window.open('sivasubramani.html')    
-                }else if((form.userid.value =="Ranjith") && (form.pswrd.value=="mods")){
-                    window.open('mods.html')    
-                }
-                  else{
-                  alert("I don't think that is the word I call you")
-                }
-              }
-            </script>
-        <div class="container">
-        <div class="cover">
-             <figure class="front"></figure>
-             <figure class="back"></figure>
-         </div>  
-         </div>
-	 ]        
-                <div class="bottom" style= "color:black; background-color:whitesmoke;font-size: 25px">
-              <h1 style="text-align:center;">About me</h1>
-            
-             <blockquote>
-                  Once a wise man said "Make the world to remeber you for what you are and not the money you make". That made me to acquire as much as I can and thus
-             my interests never remained static and I strongly believe that every breath of mine should count for something. Website development came into my radar when
-             I was forced to attend the PRP classes. Since everything happens for a reason, I sticked to it and made a count for myself. So I made this for the people I love.
-             However some walked away and thats their choice. Still no worries.....Cheers!
-            </blockquote>
-                
+
+        <div class="name">
+
+            <hr>
+            <h1 class="text-center" style="color:black; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
+            <blockquote class="text-center" style=" font-size: 20px; color:black; ">-an official site</blockquote>
+            <button><span style="cursor:pointer;" onclick="alert('Thanks for your support sweet')">Like</span>
+            </button>
+            <hr>
+        </div>
+
+        <audio nocontrols autoplay>
+            <source src="./assets/media/Charlie.mp3" type="audio/mpeg">
+        </audio>
+
+
+
+        <h2 style="text-align:center; color:white; ">
+            <blockquote>If we know each other then<br>go for this</blockquote>
+        </h2>
+
+
+        <form class="form-inline" name="login" method="POST">
+            <div class="form-group mb-2">
+                <label for="input-name" class="sr-only">Email</label>
+                <input list="name" name="userid" type="text" class="form-control" id="input-name" placeholder="Your Name">
+                <datalist id="name">
+                    <option value="Aarthi akka">
+                    <option value="Alex">
+                    <option value="Aravind VC">
+                    <option value="Ajith TV">
+                    <option value="Danujan">
+                    <option value="Dinesh">
+                    <option value="Daniel">
+                    <option value="Jeny">
+                    <option value="Henry">
+                    <option value="Peer">
+                    <option value="Thangabalu">
+                    <option value="Saran">
+                    <option value="illakia">
+                    <option value="JohnChris">
+                    <option value="Jijithra">
+                    <option value="Tanvir">
+                    <option value="Gowla">
+                    <option value="Gautham anna">
+                    <option value="Gokul">
+                    <option value="Poovarasan">
+                    <option value="Jeyasurya">
+                    <option value="Manikandan">
+                    <option value="Dolath">
+                    <option value="Sivasubramani">
+                    <option value="Sivasakthi">
+                    <option value="Ranjith">
+                    <option value="Jesaswini">
+                    <option value="Teju">
+
+                </datalist>
             </div>
-          
-               
-           </div>
-           
-        </body>    
-    </head>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" name="pswrd" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <input type="button" class="btn btn-primary mb-2" onclick="check(this.form)" value="Confirm identity" />
+            <h3 style="color: aquamarine;">[Hint: In the field of password, type the word that I used to call you]</h3>
+        </form>
+
+        <br><br><br>
+        <div style="color:black;font-size: 25px">
+            <h1 style="text-align:center;">About me</h1>
+            <blockquote>
+                Once a wise man said "Make the world to remeber you for what you are and not the money you make". That
+                made me to acquire as much as I can and thus
+                my interests never remained static and I strongly believed that every breath of mine should count for
+                something. Website development came into my radar when
+                I was forced to attend the PRP classes. Since everything happens for a reason, I sticked to it and made
+                a count for myself. So I made this for the people I love.
+                However some walked away and thats their choice. Still no worries.....Cheers!
+            </blockquote>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
 </html>
