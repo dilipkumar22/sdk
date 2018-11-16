@@ -9,37 +9,37 @@ document.onkeydown = function (e) {
 
 function check(form) {
     if ((form.userid.value == "Danujan") && (form.pswrd.value == "pooj")) {
-        window.open('danujan.html')
+        window.open('./pages/danujan.html')
     } else if ((form.userid.value == "Tanvir") && (form.pswrd.value == "veer")) {
-        window.open('tanvir.html')
+        window.open('./pages/tanvir.html')
     } else if ((form.userid.value == "illakia") && (form.pswrd.value == "sis")) {
-        window.open('illakia.html')
+        window.open('./pages/illakia.html')
     } else if ((form.userid.value == "Alex") && (form.pswrd.value == "motta")) {
-        window.open('alex.html')
+        window.open('./pages/alex.html')
     } else if ((form.userid.value == "Ajith TV") && (form.pswrd.value == "rep")) {
-        window.open('rep.html')
+        window.open('./pages/rep.html')
     } else if ((form.userid.value == "Aravind VC") && (form.pswrd.value == "vc")) {
-        window.open('vc.html')
+        window.open('./pages/vc.html')
     } else if ((form.userid.value == "Gowla") && (form.pswrd.value == "gowli")) {
-        window.open('gowli.htm')
+        window.open('./pages/gowli.htm')
     } else if ((form.userid.value == "Gokul") && (form.pswrd.value == "gokima")) {
-        window.open('gokul.html')
+        window.open('./pages/gokul.html')
     } else if (((form.userid.value == "Jeny") || (form.userid.value == "jeny")) && (form.pswrd.value == "mods")) {
-        window.open('jeny.html')
+        window.open('./pages/jeny.html')
     } else if ((form.userid.value == "Jijithra") && (form.pswrd.value == "sis")) {
-        window.open('jijithra.html')
+        window.open('./pages/jijithra.html')
     } else if ((form.userid.value == "Dolath") && (form.pswrd.value == "koks")) {
-        window.open('dolath.html')
+        window.open('./pages/dolath.html')
     } else if ((form.userid.value == "Daniel") && (form.pswrd.value == "kothu")) {
-        window.open('daniel.html')
+        window.open('./pages/daniel.html')
     } else if ((form.userid.value == "Dinesh") && (form.pswrd.value == "balloon")) {
-        window.open('dinesh.html')
+        window.open('./pages/dinesh.html')
     } else if ((form.userid.value == "Poovarasan") && (form.pswrd.value == "ponukala")) {
-        window.open('poovarasan.html')
+        window.open('./pages/poovarasan.html')
     } else if ((form.userid.value == "Sivasubramani") && (form.pswrd.value == "dudeuh")) {
-        window.open('sivasubramani.html')
+        window.open('./pages/sivasubramani.html')
     } else if ((form.userid.value == "Ranjith") && (form.pswrd.value == "mods")) {
-        window.open('mods.html')
+        window.open('./pages/mods.html')
     }
     else {
         alert("I don't think that is the word I call you")
