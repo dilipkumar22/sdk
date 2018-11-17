@@ -47,5 +47,5 @@ function check(form) {
 } 
 
 function loginFailed(){
-    swal("LogIn error", "I don't think that is the word I call you", "error");
+    swal("Log In Error", "I don't think that is the word I call you", "error");
 }
