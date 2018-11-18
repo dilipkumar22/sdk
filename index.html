@@ -5,7 +5,7 @@
        .container{
        width: 300px;
        height:310px;
-       background: url(p1.jpg);
+       background-color:white;
        position:relative;
        left: 50%;
        top: 29%;
@@ -39,7 +39,7 @@ backface-visibility: hidden;
 }
 
 figure.front{
-background: url(p3.jpg);
+background-color:red;
 }
 
 figure.back{
@@ -242,6 +242,15 @@ transform: rotateY(180deg);
               }
             </script>
         <div class="container">
+		 <figure class="front">
+                 <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                 <textarea name="comments" id="comments" style="width:96%;height:120px;padding:2%;font-size:1.2em;background-color:gold;">
+                 Hey... say something!
+                 </textarea>
+                 <input type="submit" value="Submit">
+                 </form>
+
+                 </figure>
         <div class="cover">
              <figure class="front"></figure>
              <figure class="back"></figure>
