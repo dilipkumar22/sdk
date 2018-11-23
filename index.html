@@ -1,75 +1,100 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>_Mr_Blacksmith</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./assets/js/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
 </head>
 
 <body>
+    <audio nocontrols autoplay>
+        <source src="./assets/media/Charlie.mp3" type="audio/mpeg">
+    </audio>
+
     <video autoplay muted loop id="myVideo">
         <source src="./assets/media/Website.mp4" type="video/mp4">
     </video>
-
-    <h1 class="t1" style="color: white;">Live a zero waste life.</h1>
-
-    <div class="facebook">
-        <a href="https://www.facebook.com/profile.php?id=100003279987296">
-            <img src="./assets/images/facebook-logo.png" width="40px" height="40px">
-        </a>
-    </div>
-
-    <div class="instagram">
-        <a href="https://www.instagram.com/_mr_blacksmith/">
-            <img src="./assets/images/instagram-logo.png" width="40px" height="42px">
-        </a>
-    </div>
-
-    <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip">
-            <img src="./assets/images/whatsapp.png" width="40px" height="42px">
-        </a>
-    </div>
-
     <div class="backgroundwrap">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#social-buttons"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Live a zero waste life</a>
+                </div>
+                <div class="collapse navbar-collapse" id="social-buttons">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100003279987296" title="Find me on Facebook">
+                                <span style="font-size: 1.5em; color: #3b5998;">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=919566669213&text=hi%20dilip" title="Contact via Whatsapp">
+                                <span style="font-size: 1.5em; color: #25d366;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </span>
+                                Whatsapp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/_mr_blacksmith/" title="Follow on Instagram">
+                                <span style="font-size: 1.5em; color: #c13584;">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
 
-        <div class="name">
-
-            <hr>
-            <h1 style="color:white; font-size:50px; border: 1px;font-family:cursive; "><i><b>_Mr_Blacksmith</b></i></h1>
-            <blockquote style=" font-size: 20px; color:white; ">-an official site</blockquote>
-            <button class="t2" onclick="thanks()" ><span style="cursor:pointer;">
-                    Like</span> </button>
-            <hr>
+        <div class="jumbotron" style="background:rgba(0, 0, 0, 0.1);color: white">
+            <br />
+            <h2 class="text-center" id="homepageFont">_Mr_Blacksmith</h2>
+            <p class="text-center" id="homepageFont">- an official site</p>
         </div>
 
-        <audio controls autoplay>
-            <source src="./assets/media/Charlie.mp3" type="audio/mpeg">
-        </audio>
-
-
-
-        <h2 style="text-align:center; color:white; ">
-            <blockquote>If we know each other then<br>go for this</blockquote>
-        </h2>
-
-        <form style="text-align:center;" name="login">
-            <input list="name" placeholder="yourname" name="userid" type="text">
-
-
-            <input type="password" placeholder="password" name="pswrd"><br><br>
-            <input style="cursor:pointer" type="button" onclick="check(this.form)" value="login" />
-            <h3 style="color: aquamarine;">[Hint: In the field of password, type the word that I used to call you]</h3>
+        <form class="container" name="login" method="POST">
+            <div class="form-group row">
+                <label for="input-name" class="sr-only">Email</label>
+                <div class="col-sm-4">
+                    <h3 style="color:white">If we know each other, then go for this.</h3>
+                    <input list="name" name="userid" type="text" class="form-control" id="input-name" placeholder="Your Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <div class="col-sm-4">
+                    <input type="password" name="pswrd" class="form-control" id="inputPassword" placeholder="Password"
+                        aria-describedby="passwordHelpBlock" />
+                    <small id="passwordHelpBlock" class="form-text" style="color:white">
+                        Hint: In the field of password, type the word that I used to call you
+                    </small>
+                </div>
+            </div>
+            <input type="button" class="btn btn-primary mb-2" onclick="check(this.form)" value="Confirm identity" />
         </form>
 
-
-        <div class="container">
+        <div class="disq-wrap">
             <figure>
                 <div id="disqus_thread"></div>
                 <script>
@@ -98,26 +123,33 @@
                 <figure class="back"></figure>
             </div>
         </div>
-        ] <iframe src="https://cloudgames.com/games/html5/knife-hit-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com"
-            width="980" height="571" frameborder="0" scrolling="no"></iframe>
-        <div style="color:black; background-color:whitesmoke;font-size: 25px">
-            <h1 style="text-align:center;">About me</h1>
-
-            <blockquote>
-                Once a wise man said "Make the world to remeber you for what you are and not the money you make". That
-                made me to acquire as much as I can and thus
-                my interests never remained static and I strongly believe that every breath of mine should count for
-                something. Website development came into my radar when
-                I was forced to attend the PRP classes. Since everything happens for a reason, I sticked to it and made
-                a count for myself. I made this for the people I love.
-                However some walked away and thats their choice. Still no worries.....Cheers!
-            </blockquote>
-
+        <div class="text-center">
+            <iframe src="https://cloudgames.com/games/html5/knife-hit-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com"
+                width="980" height="571" frameborder="0" scrolling="no"></iframe>
         </div>
 
+        <br><br><br>
+        <div class="container">
+            <h1 style="color:white">About Me:</h1>
+            <p class="homePara text-justify" id="homepageFont" style="color:white">
+                Once a wise man said "Make the world to remember you for what you are and not the money you make". That
+                made me to acquire as much as I can and thus
+                my interests never remained static and I strongly believed that every breath of mine should count for
+                something. Website development came into my radar when
+                I was forced to attend the PRP classes. Since everything happens for a reason, I sticked to it and made
+                a count for myself. So I made this for the people I love.
+                However some walked away and thats their choice. Still no worries.....Cheers!
+            </p>
+        </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
