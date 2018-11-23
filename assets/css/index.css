@@ -35,11 +35,11 @@
     }
 
     figure.front{
-    background: url(p3.png);
+    background: url("../images/p3.png");
     }
 
     figure.back{
-    background: url(p2.jpg);
+    background: url(../images/p2.jpg);
     transform: rotateY(180deg);
     }
 
