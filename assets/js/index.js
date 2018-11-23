@@ -41,5 +41,10 @@ function check(form) {
         window.open('./pages/mods.html')
     }
     else {
-        swal("Log In Error", "I don't think that is the word I call you", "error");    }
+        swal("Log In Error", "I don't think that is the word I call you", "error");
+    }
+}
+
+function thanks(){
+    swal('Thanks for your support sweet heart');
 }
