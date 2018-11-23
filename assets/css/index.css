@@ -1,12 +1,10 @@
-#homepageFont{
+    .homepageFont{
     font-family: 'Cutive', serif;
     }
     .homePara{
     font-size: 1.5em;
     line-height: normal;
     }
-    
-    
     #myVideo {
     position: fixed;
     right: 0;
