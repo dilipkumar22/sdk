@@ -50,7 +50,7 @@ transform: rotateY(180deg);
     background-color:white;
     position:relative;
     left: 80%;
-    top: 15%;
+    top: 10%;
     transform: translate(-50%,-50%);
     perspective:1000px;
     bottom: 50%;
@@ -60,7 +60,7 @@ transform: rotateY(180deg);
     width: 400px;
     height: 100%;
     position:absolute;
-    top:5%;
+    
     left: 1px;
     background-color: #345b8c;
     transform: rotateY(0deg);
