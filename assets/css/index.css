@@ -38,7 +38,11 @@
     figure.front{
     background: url("../images/p3.png");
     }
-    
+    figure.back{
+
+transform: rotateY(180deg);
+}
+
     
     .disq-wrap{
     width: 400px;
