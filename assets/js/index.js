@@ -39,6 +39,12 @@ function check(form) {
         window.open('./pages/sivasubramani.html')
     } else if (((form.userid.value == "Ranjith") || (form.userid.value == "ranjith")) && (form.pswrd.value == "mmods")) {
         window.open('./pages/mods.html')
+    } else if (((form.userid.value == "Bharathi") || (form.userid.value == "bharathi")) && (form.pswrd.value == "bhar")) {
+        window.open('./pages/bharathi.html')
+    } else if (((form.userid.value == "Henry") || (form.userid.value == "henry")) && (form.pswrd.value == "Kelattu")) {
+        window.open('./pages/henry.html')
+    } else if (((form.userid.value == "Christina") || (form.userid.value == "christina")) && (form.pswrd.value == "chris")) {
+        window.open('./pages/christina.html')
     }
     else {
         swal("Log In Error", "I don't think that is the word I call you", "error");
