@@ -45,6 +45,8 @@ function check(form) {
         window.open('./pages/henry.html')
     } else if (((form.userid.value == "Christina") || (form.userid.value == "christina")) && (form.pswrd.value == "chris")) {
         window.open('./pages/christina.html')
+    } else if (((form.userid.value == "Indu") || (form.userid.value == "indu")) && (form.pswrd.value == "chelli")) {
+        window.open('./pages/anonymus.html')
     }
     else {
         swal("Log In Error", "I don't think that is the word I call you", "error");
